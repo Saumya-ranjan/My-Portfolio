@@ -2,13 +2,15 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <>
     <title>Saumyaranjan</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="HTML5 website template" />
     <meta name="keywords" content="global, template, html, sass, jquery" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="/static/assets/css/main.css" />
   </head>
@@ -18,8 +20,8 @@
     <!-- notification for small viewports and landscape oriented smartphones -->
     <div class="device-notification">
       <a class="device-notification--logo" href="#0">
-        <img src="/static/assets/img/logo.png" alt="Global" />
-        <p>Saumyaranjan</p>
+        <!-- <img src="/static/assets/img/logo.png" alt="Global" /> -->
+        <p></p>
       </a>
       <p class="device-notification--message"></p>
     </div>
@@ -31,128 +33,18 @@
           <div class="l-wrapper">
             <header class="header">
               <a class="header--logo" href="#0">
-                <img src="/static/assets/img/logo.png" alt="Global" />
-                <p>Saumyaranjan</p>
+                <!-- <img src="/static/assets/img/logo.png" alt="Global" /> -->
+                <p></p>
               </a>
-              <button class="header--cta cta">Hire Us</button>
+              <!-- <button class="header--cta cta">Hire Us</button> -->
               <div class="header--nav-toggle">
                 <span></span>
               </div>
             </header>
             <nav class="l-side-nav">
               <ul class="side-nav">
-                <li class="is-active"><span>Bio</span></li>
-                <li><span>Projects</span></li>
-                <li><span>Achievements</span></li>
-                <li><span>Contact</span></li>
-              </ul>
-            </nav>
-            <ul class="l-main-content main-content">
-              <li class="l-section section section--is-active">
-                <div class="intro">
-                  <div class="intro--banner">
-                    <h2>Hey There, I'm <span style="color: #c770f0"> Saumyaranjan parida</span>
-                     ,</h2>
-                    <h4>
-                      I have been born and brought up in Mumbai(India). <br />
-                      I currently am a Student and i reside in Mumbai. <br />
-                      I fell in love with programming from 1st year of my
-                      college. <br />
-                      From then I have been grinding myself in this <span style="color: #c770f0">programming
-                      world.</span> <br />
-                      I am fluent in classics like
-                      <span style="color: #c770f0"
-                        >Python, Javascript and c++</span
-                      >. <br />
-                      I have also worked with
-                      <span style="color: #c770f0">Django and Flask.</span>
-                      <br />
-                      My field of Interest's are building new
-                      <span style="color: #c770f0"
-                        >Web Technologies and Products</span
-                      >
-                      <br />
-                      and also in areas related to
-                      <span style="color: #c770f0">Machine Learning,</span
-                      ><br />
-                      <span style="color: #c770f0"
-                        >Deep Learning and Natural Launguage Processing.</span
-                      >
-                      <br />
-                      Whenever possible, I also apply my passion for developing
-                      products <br />
-                      with <span style="color: #c770f0">Node.js</span> and
-                      <span style="color: #c770f0"
-                        >Modern Javascript Library and Frameworks </span
-                      >like
-                      <br />
-                      <span style="color: #c770f0">React.js and Next.js</span>
-                    </h4>
-                    <button class="cta">
-                      Contact Me
-                      <svg
-                        version="1.1"
-                        id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px"
-                        y="0px"
-                        viewBox="0 0 150 118"
-                        style="enable-background: new 0 0 150 118"
-                        xml:space="preserve"
-                      >
-                        <g
-                          transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)"
-                        >
-                          <path
-                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"
-                          />
-                        </g>
-                      </svg>
-                      <span class="btn-background"></span>
-                    </button>
-                    <img
-                      src="/static/assets/img/introduction-visual.png"
-                      alt="Welcome"
-                    />
-                  </div>
-                  <div class="intro--options">
-                    <a href="#0">
-                      <h3  style="color: #e1d4e7">Web Development</h3>
-                      <p>
-                        <ul>
-                          <li style="color: #c770f0">
-                            Django
-                          </li>
-                          <li style="color: #c770f0">
-                            Mern Stack
-                          </li>
-                        </ul>
-                      </p>
-                    </a>
-                    <a href="#0">
-                      <h3  style="color: #e1d4e7">Machine Learning</h3>
-                      <p>
-                        
-                      </p>
-                    </a>
-                    <a href="#0">
-                      <h3 style="color: #e1d4e7">Api's</h3>
-                      <p>
-                        <ul><li style="color: #c770f0">Mapbox APIs</li>
-                        <li style="color: #c770f0">
-                          Bot APIs
-                        </li>
-                      <li style="color: #c770f0">
-                        Twilio
-                      </li></ul>
-                        
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </li>
-             
+              
+ {% include 'components/bio.html' %}
 
 {% include 'components/project.html' %}
 
