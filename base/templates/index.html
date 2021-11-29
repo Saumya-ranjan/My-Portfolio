@@ -1,73 +1,51 @@
-
-
-<!DOCTYPE html>
-<html lang="en">
-  <>
-    <title>Saumyaranjan</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="HTML5 website template" />
-    <meta name="keywords" content="global, template, html, sass, jquery" />
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="/static/assets/css/main.css" />
-  </head>
+{% include 'components/header.html' %}
 
   <body>
-    <div>
-    <!-- notification for small viewports and landscape oriented smartphones -->
-    <div class="device-notification">
-      <a class="device-notification--logo" href="#0">
-        <!-- <img src="/static/assets/img/logo.png" alt="Global" /> -->
-        <p></p>
-      </a>
-      <p class="device-notification--message"></p>
+    <!-- Pre Load Starts -->
+    <div id="pre-load">
+      <div class="load-circle"></div>
     </div>
-
-    <div class="perspective effect-rotate-left">
-      <div class="container">
-        <div class="outer-nav--return"></div>
-        <div id="viewport" class="l-viewport">
-          <div class="l-wrapper">
-            <header class="header">
-              <a class="header--logo" href="#0">
-                <!-- <img src="/static/assets/img/logo.png" alt="Global" /> -->
-                <p></p>
-              </a>
-              <!-- <button class="header--cta cta">Hire Us</button> -->
-              <div class="header--nav-toggle">
-                <span></span>
-              </div>
-            </header>
-            <nav class="l-side-nav">
-              <ul class="side-nav">
-              
- {% include 'components/bio.html' %}
-
-{% include 'components/project.html' %}
-
-{% include 'components/achievement.html' %}
-
-{% include 'components/contact.html' %}
-              
-{% include 'components/hireme.html' %}
-            </ul>
+    <div id="wrapper">
+      <div class="container-fluid">
+        <div class="row no-gutters v-full">
+          <!-- Left Wrapper Starts -->
+          <div id="left-wrapper" class="col-12 col-lg-8">
+            <!-- Main Content (Home) Starts -->
+           {% include 'components/index-body.html'%}
+            <!-- Main Content (Home) Ends -->
+            <!-- Main Content (About) Starts -->
+            {% include 'components/about.html' %}
+            <!-- Main Content (About) Ends -->
+            <!-- Main Content (Resume) Starts -->
+            {% include 'components/resume.html' %}
+            <!-- Main Content (Resume) Ends -->
+            <!-- Main Content (Portfolio) Starts -->
+        {% include 'components/blog.html' %}
+            <!-- Main Content (Portfolio) Ends -->
+            <!-- Main Content (Contact) Starts -->
+         {% include 'components/contact.html' %}
+            <!-- Main Content (Contact) Ends -->
           </div>
+          <!-- Left Wrapper Ends -->
+          <!-- Right Wrapper Starts -->
+          <div id="right-wrapper" class="col-lg-4">
+            <!-- Large Profile Picture Starts -->
+            <div class="lg-profile-picture"></div>
+            <!-- Large Profile Picture Ends -->
+          </div>
+          <!-- Right Wrapper Ends -->
         </div>
       </div>
-      {% include 'components/outernav.html' %}
     </div>
+    <!-- Wrapper Ends -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>
-      window.jQuery ||
-        document.write(
-          '<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>'
-        );
-    </script>
-    <script src="/static/assets/js/functions-min.js"></script>
-    </div>
+    <!-- JS Files -->
+    <script src="/static/assets/js/jquery-3.3.1.min.js"></script>
+    <script src="/static/assets/js/bootstrap.min.js"></script>
+    <script src="/static/assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/static/assets/js/isotope.pkgd.min.js"></script>
+    <script src="/static/assets/js/magnific-popup.min.js"></script>
+    <script src="/static/assets/js/typeit.min.js"></script>
+    <script src="/static/assets/js/custom.js"></script>
   </body>
 </html>
