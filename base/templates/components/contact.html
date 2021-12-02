@@ -41,7 +41,7 @@
                 <span class="icon-of-value">
                   <i class="fas fa-map-marker-alt"></i>
                 </span>
-                <span class="value">Silicon Valley, USA</span>
+                <span class="value">Virar, Mumbai (India)</span>
               </li>
               <!-- Single Contact Info Ends -->
               <!-- Single Contact Info Starts -->
@@ -50,7 +50,7 @@
                 <span class="icon-of-value">
                   <i class="fas fa-mobile-alt"></i>
                 </span>
-                <span class="value">+76 21 19 34 20</span>
+                <span class="value">+91 7977787473</span>
               </li>
               <!-- Single Contact Info Ends -->
               <!-- Single Contact Info Starts -->
@@ -59,7 +59,7 @@
                 <span class="icon-of-value">
                   <i class="fas fa-envelope"></i>
                 </span>
-                <span class="value">you@yourwebsite.com</span>
+                <span class="value">saumyaranjan.sp20@gmail.com</span>
               </li>
               <!-- Single Contact Info Ends -->
               <!-- Single Contact Info Starts -->
@@ -68,7 +68,7 @@
                 <span class="icon-of-value">
                   <i class="fas fa-globe"></i>
                 </span>
-                <span class="value">www.yourwebsite.com</span>
+                <span class="value"></span>
               </li>
               <!-- Single Contact Info Ends -->
               <!-- Single Contact Info Starts -->
@@ -77,7 +77,9 @@
                 <ul class="social-media">
                   <!-- Single Social Media Starts -->
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100007453277867"
+                    >
                       <span class="front">
                         <i class="fab fa-facebook-f"></i>
                       </span>
@@ -89,7 +91,7 @@
                   <!-- Single Social Media Ends -->
                   <!-- Single Social Media Starts -->
                   <li>
-                    <a href="#">
+                    <a href="https://twitter.com/Saumyar45446524">
                       <span class="front">
                         <i class="fab fa-twitter"></i>
                       </span>
@@ -101,19 +103,21 @@
                   <!-- Single Social Media Ends -->
                   <!-- Single Social Media Starts -->
                   <li>
-                    <a href="#">
+                    <a href="https://github.com/Saumya-ranjan/">
                       <span class="front">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-github"></i>
                       </span>
                       <span class="back">
-                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-github"></i>
                       </span>
                     </a>
                   </li>
                   <!-- Single Social Media Ends -->
                   <!-- Single Social Media Starts -->
                   <li>
-                    <a href="#">
+                    <a
+                      href="https://www.linkedin.com/in/saumyaranjan-parida-37a40b184/"
+                    >
                       <span class="front">
                         <i class="fab fa-linkedin-in"></i>
                       </span>
@@ -146,11 +150,12 @@
           </div>
           <!-- Note Ends -->
           <!-- Alert/Contact Message Starts -->
+       
           <div class="alert contact-msg col-lg-9 col-md-9 col-12"></div>
           <!-- Alert/Contact Message Ends -->
           <!-- Form Wrapper Starts -->
           <div class="form-wrapper col-lg-9 col-md-9 col-12">
-            <form name="contact" method="POST" action="php/process-form.php">
+            <form name="contact" method="POST" >   {% csrf_token %}
               <div class="form-group clearfix">
                 <div class="inner-form-group">
                   <input
