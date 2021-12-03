@@ -27,4 +27,4 @@ def home(request):
         From: {}
         '''.format(data['message'],data['email'])
         send_mail(data['subject'],message,'',['saumyaranjan.sp20@gmail.com'])
-    return render(request,'index.html',{})
+    return render(request,'base/index.html',{})

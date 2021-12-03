@@ -18,7 +18,7 @@ load_dotenv()
 # print(os.getcwd())
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-CORE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -47,6 +47,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -56,7 +57,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'myportfolio.urls'
-TEMPLATE_DIR = os.path.join(CORE_DIR , "base/templates") 
+TEMPLATE_DIR = os.path.join(BASE_DIR , "templates") 
 
 TEMPLATES = [
     {
@@ -125,13 +126,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-# STATIC_ROOT = os.path.join(CORE_DIR,'staticfiles')
 
-# STATIC_URL = '/static/'
+STATIC_URL = '/static/'
 
-# STATICFILES_DIRS = [
-#    os.path.join(CORE_DIR,'base/static'),
-# ]
+
+STATICFILES_DIRS = [
+  BASE_DIR / 'static',
+]
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
