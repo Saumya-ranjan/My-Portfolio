@@ -1,3 +1,3 @@
-### This project is my portfolio
+# This project is My portfolio
 
-The Server of this Project is Up and Running on: https://github.com/Saumya-ranjan/My-Portfolio
+## The Server of this Project is Up and Running on: https://saumyaranjanportfolio.herokuapp.com/
