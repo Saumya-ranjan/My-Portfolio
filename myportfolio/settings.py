@@ -21,6 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -126,17 +127,20 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
-STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
-MEDIA_ROOT = BASE_DIR / 'static/img'
-MEDIA_URL = '/img/'
+
+
+# MEDIA_ROOT = BASE_DIR / 'static/img'
+# MEDIA_URL = '/img/'
 
 
 STATICFILES_DIRS = [
    BASE_DIR / 'static'
 ]
+
 
 
 
